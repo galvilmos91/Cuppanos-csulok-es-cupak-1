@@ -1,13 +1,43 @@
 
 
-
+body {
+  margin: 0;
+}
 
 * {
-  margin: 0;
+  background: #ff2f00;
   box-sizing: border-box;
 }
 
-header.img {
-  background: "img(url('../img/fofoto.jpg')) no-repeat center center";
+header {
+  background: url('../img/fofoto.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
+  }
 
+h1 {
+  color: #fff;
+  text-align: center;
+  
+}
+
+nav {
+  background: #eead52;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav>ul>li {
+    color: white;
+    float: left;
 }
