@@ -16,11 +16,13 @@ header {
   height: 56rem;
   position: relative;
   
+  
   }
 
 h1 {
   color: #fff;
   text-align: center;
+  margin: 0;
   
 }
 
@@ -55,6 +57,19 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+nav>ul>li {
     float: left;
+}
+
+nav .has-submenu {
+    position: relative;
+}
+
+nav .submenu {
+  position: absolute;
+}
+
+nav .submenu a {
+  background: rgba(247, 121, 83,.9);
+
 }
