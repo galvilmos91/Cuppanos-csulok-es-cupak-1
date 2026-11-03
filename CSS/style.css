@@ -27,7 +27,7 @@ h1 {
 }
 
 nav {
-  background: #ff2f00;
+  background: rgba(250, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -41,10 +41,12 @@ nav::after {
 }
 
 nav a {
+    /* background: rgba(250, 0, 0, 0.7);  */
     text-decoration: none;
     color: white;    
     padding: 20px;
     display: block;
+    
 }
 
 nav a:hover {
@@ -52,24 +54,41 @@ nav a:hover {
 }
 
 nav ul {
+    /* background: rgba(250, 0, 0, 0.7); */
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 nav>ul>li {
     float: left;
+    
 }
 
 nav .has-submenu {
+    /* background: rgba(250, 0, 0, 0.7); */  
     position: relative;
+    width: 150px;
+
+}
+
+nav .has-submenu:hover .submenu {
+    display: block;
 }
 
 nav .submenu {
   position: absolute;
+  width: 200px;
+  display: none;
 }
 
 nav .submenu a {
-  background: rgba(247, 121, 83,.9);
+  /* background:rgba(255, 0, 0, 0.7); */
+  padding: 10px 20px;
 
+}
+
+nav .submenu a:hover {
+  background: rgba(18, 193, 91, 0.9);
 }
