@@ -55,8 +55,10 @@ nav a {
     /* background: rgba(250, 0, 0, 0.7);  */
     text-decoration: none;
     color: white;    
-    padding: 20px;
-    display: block;    
+    /* padding: 10px 20px; */
+    display: block;
+    text-align: center;    
+    
 }
 
 nav a:hover {
@@ -67,12 +69,14 @@ nav ul {
     /* background: rgba(250, 0, 0, 0.8); */
     display: flex;
     flex-direction: row;
-
+    justify-content: space-evenly;
+    font-size: 1.2vw;
     list-style: none;
-    justify-content: space-around;
+    /* justify-content: space-evenly; */
     margin: 0;
     padding: 0;
     text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.93);
          
 }
 
@@ -84,10 +88,11 @@ nav>ul>li {
 nav .has-submenu {
     /* background: rgba(250, 0, 0, 0.7); */  
     position: relative;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
     
     
     /* width: 150px; */
-    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    /* border-left: 1px solid rgba(255, 255, 255, 0.4); */
     
 
 }
@@ -104,8 +109,10 @@ nav .submenu {
 }
 
 nav .submenu a {
-  background:rgba(255, 0, 0, .9); 
-  padding: 10px 20px;
+
+  background:rgba(255, 0, 0, .9);
+  /* font-size: 1.2vw; 
+  padding: 10px 50px; */
 }
 
 nav .submenu a:hover {
