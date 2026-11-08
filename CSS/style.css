@@ -17,11 +17,12 @@ p {
 }
 
 header {
+  
   background: url('../img/fofoto.jpg');
   background-size: cover;
   background-position: center;
   height: 46vw;
-  /* position: relative; */
+  position: relative;
   
   
   }
@@ -35,15 +36,13 @@ h1 {
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  
+
   background: rgba(250, 0, 0, 0.7);
   text-align: center;
-  /* position: absolute;
+  position: absolute;
   bottom: 0;
   left: 0;
-  right: 0; */
+  right: 0;
 }
 
 /* nav::after {
@@ -66,8 +65,11 @@ nav a:hover {
 
 nav ul {
     /* background: rgba(250, 0, 0, 0.8); */
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;        
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -81,7 +83,8 @@ nav>ul>li {
 
 nav .has-submenu {
     /* background: rgba(250, 0, 0, 0.7); */  
-    /* position: relative; */
+    position: relative;
+    
     width: 150px;
     border-left: 1px solid rgba(255, 255, 255, 0.4);
     
@@ -89,19 +92,19 @@ nav .has-submenu {
 }
 
 nav .has-submenu:hover .submenu {
-    /* display: block; */
+    display: block;
 }
 
 nav .submenu {
-  /* position: absolute; */
-  width: 200px;
+  position: absolute;
+  max-width: 200px;
   display: none;
   
 }
 
 nav .submenu a {
   background:rgba(255, 0, 0, .9); 
-  padding: 10px 20px;
+  padding: 10px 70px;
 }
 
 nav .submenu a:hover {
