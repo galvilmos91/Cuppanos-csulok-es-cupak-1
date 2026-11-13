@@ -9,7 +9,100 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  background: url('../img/fofoto.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  height: 650px;
+  position: relative;
+  
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  /* position: absolute; */
+  top: 0;
+}
+
 nav {
+  background: rgba(207, 0, 0, .8);
+/*   width: 14vw; */
+  align-items: center;
+  /* width: auto; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+nav a {
+  color: white;
+  font-size: 1.2vw;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background: rgb(227, 72, 72, .8);
+  color: yellow;
+
+}
+
+nav .has-submenu {
+  
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-basis: auto; */
+  justify-content: space-around;
+
+ /*  flex-grow: 1; */
+  list-style: none;
+  text-decoration: none;
+  
+  margin: 0;
+  padding: 0;
+/*   left: 0;
+  right: 0; */
+
+}
+
+/* nav .has-submenu {
+  align-items: center;
+} */
+
+nav .submenu {
+  background: rgba(207, 0, 0, .8);;
+  display: flex;  
+  flex-direction: column;
+ /*  width: 5vw; */
+  position: absolute;  
+}
+
+nav .submenu a {
+  display: none;
+}
+
+nav .has-submenu:hover .submenu a {
   display: flex;
 }
 
+
+/* nav .has-submenu:hover nav ul {
+  height: 41px;
+} */
+/* nav .submenu a {
+  display: none;
+  
+} */
+
+/* nav.submenu ul:hover {
+  display: block;
+} */
