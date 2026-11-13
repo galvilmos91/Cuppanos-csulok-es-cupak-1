@@ -56,12 +56,13 @@ nav .has-submenu {
   
 }
 
-nav ul {
+nav>ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   /* flex-basis: auto; */
-  justify-content: space-around;
+  justify-content: center;
+
 
  /*  flex-grow: 1; */
   list-style: none;
@@ -74,14 +75,16 @@ nav ul {
 
 }
 
-/* nav .has-submenu {
-  align-items: center;
-} */
+nav .has-submenu {
+  padding: 0 36px;
+}
 
 nav .submenu {
-  background: rgba(207, 0, 0, .8);;
+  background: rgba(207, 0, 0, .8);
   display: flex;  
   flex-direction: column;
+  list-style: none;
+  padding: 10px 0;
  /*  width: 5vw; */
   position: absolute;  
 }
@@ -91,7 +94,7 @@ nav .submenu a {
 }
 
 nav .has-submenu:hover .submenu a {
-  display: flex;
+  display: block;
 }
 
 
